@@ -3,7 +3,7 @@
   <title>Lau Blog</title>
   
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="./atom.xml" rel="self"/>
   
   <link href="http://www.ike61.com/"/>
   <updated>2019-01-25T05:45:17.609Z</updated>
