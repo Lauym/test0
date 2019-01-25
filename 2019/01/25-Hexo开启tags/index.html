@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Hexo开启tags标签页 | Lau Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="tags 标签页 开启标签页  1hexo new page tags  修改 博客目录/source/tags/index.md 中的数据  12layout: &quot;tags&quot;comment: false  查看 博客目录/scaffolds/post.md 中有无 tags:，若无,则按照格式手动添加并保存  12345---............tags:---   至此完成tags的开启">
+<meta name="keywords" content="Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo开启tags标签页">
+<meta property="og:url" content="http://www.ike61.com/2019/01/25-Hexo开启tags/index.html">
+<meta property="og:site_name" content="Lau Blog">
+<meta property="og:description" content="tags 标签页 开启标签页  1hexo new page tags  修改 博客目录/source/tags/index.md 中的数据  12layout: &quot;tags&quot;comment: false  查看 博客目录/scaffolds/post.md 中有无 tags:，若无,则按照格式手动添加并保存  12345---............tags:---   至此完成tags的开启">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-25T05:45:17.609Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo开启tags标签页">
+<meta name="twitter:description" content="tags 标签页 开启标签页  1hexo new page tags  修改 博客目录/source/tags/index.md 中的数据  12layout: &quot;tags&quot;comment: false  查看 博客目录/scaffolds/post.md 中有无 tags:，若无,则按照格式手动添加并保存  12345---............tags:---   至此完成tags的开启">
+    
+        <link rel="alternate" type="application/atom+xml" title="Lau Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Lau</h5>
+          <a href="mailto:lauyimou@163.com" title="lauyimou@163.com" class="mail">lauyimou@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/lauym" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Hexo开启tags标签页</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Hexo开启tags标签页</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-01-25T04:24:10.000Z" itemprop="datePublished" class="page-time">
+  2019-01-25
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Nodejs/">Nodejs</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#tags-标签页"><span class="post-toc-number">1.</span> <span class="post-toc-text">tags 标签页</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#在博客中显示-tags"><span class="post-toc-number">2.</span> <span class="post-toc-text">在博客中显示 tags</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Hexo开启tags" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Hexo开启tags标签页</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-01-25 12:24" datetime="2019-01-25T04:24:10.000Z" itemprop="datePublished">2019-01-25</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Nodejs/">Nodejs</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="tags-标签页"><a href="#tags-标签页" class="headerlink" title="tags 标签页"></a>tags 标签页</h2><ol>
+<li><p>开启标签页</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改 <code>博客目录/source/tags/index.md</code> 中的数据</p>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span> <span class="string">"tags"</span></span><br><span class="line"><span class="attr">comment:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看 <code>博客目录/scaffolds/post.md</code> 中有无 <code>tags:</code>，若无,则按照格式手动添加并保存</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">......</span><br><span class="line">......</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>至此完成tags的开启</p>
+<h2 id="在博客中显示-tags"><a href="#在博客中显示-tags" class="headerlink" title="在博客中显示 tags"></a>在博客中显示 tags</h2><ol>
+<li><p>新建博客内容</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new xxxx</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开 <code>博客目录/source/_post/xxxx.md</code> 进行Markdown编辑，在 <code>tags:</code> 后添加自定义标签即可</p>
+</li>
+</ol>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-01-25T05:45:17.609Z" itemprop="dateUpdated">2019-01-25 13:45</time>
+</span><br>
+
+
+        
+        <br>如果你觉得本文写得不错，可在下方分享或打赏...
+        
+    </div>
+    
+    <footer>
+        <a href="http://www.ike61.com">
+            <img src="/img/avatar.jpg" alt="Lau">
+            Lau
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ike61.com/2019/01/25-Hexo开启tags/&title=《Hexo开启tags标签页》 — Lau Blog&pic=http://www.ike61.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ike61.com/2019/01/25-Hexo开启tags/&title=《Hexo开启tags标签页》 — Lau Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <!-- facebook -->
+      <!-- <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ike61.com/2019/01/25-Hexo开启tags/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hexo开启tags标签页》 — Lau Blog&url=http://www.ike61.com/2019/01/25-Hexo开启tags/&via=http://www.ike61.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ike61.com/2019/01/25-Hexo开启tags/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li> -->
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        觉得不错可打赏或分享
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <!-- <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div> -->
+    <div class="bottom">
+        <p><span>Lau &copy; 2016 - 2019</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备1234556号-1</a><br>
+                
+                Power by <a href="http://aliyun.com" target="_blank">AliCloud</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.ike61.com/2019/01/25-Hexo开启tags/&title=《Hexo开启tags标签页》 — Lau Blog&pic=http://www.ike61.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.ike61.com/2019/01/25-Hexo开启tags/&title=《Hexo开启tags标签页》 — Lau Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <!-- facebook -->
+      <!-- <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.ike61.com/2019/01/25-Hexo开启tags/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hexo开启tags标签页》 — Lau Blog&url=http://www.ike61.com/2019/01/25-Hexo开启tags/&via=http://www.ike61.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.ike61.com/2019/01/25-Hexo开启tags/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li> -->
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACL0lEQVR42u3aW67iMBAFQPa/6cwCuAnndGCk2OUvpEBwBalxP16veB1v6+zq2fvfr569fr//1xYGBsZjGcflSjZ6vYkWkDyOP6gYGBgbMM4i2J2vn4XRs/t82DMGBgbG5a2PYF0fJTEwMDB+wchD6ocjXZAMY2BgYORJbEvKN/Ffc3EMDIwHMu4klr9+/ZP+BgYGxqMYR7nu9A3bx1TsCgMDY2lG+zV5k3KGn+0HAwNjbUbbjEw2kRTOZsnt6TsxMDA2Y7SF/lmm2R4Br5EYGBh7MpIG552xjDaJrY+GGBgYyzHyADoLwbPhsARZT3NgYGA8kJFvLhmGaEcx2iPp6/4zxsDAeCAjD7j5gS+/eueefySxGBgYizLaQtjsSJeH4DbpxcDAwCjmNW4MbXwBgIGBsTFj2FAsBzLatsEX/jcwMDAexUgK+rNwmRfX8uf9YdgCAwNjaUYbBNvC3JdblRgYGFsy2iS2Daltq6AeLMPAwFiakZfmZwNhbek/PywWvwkGBsZCjLa4n5fv28LcsGCHgYGxDaP9ml8MZ7QBHQMDY0/GrKzWfrbYYkLCwMBYlHGUq20DzJLSPMRjYGDswMhXXpKbDV60Bbg2WGNgYDyd0Y6r5uNi+UNpA27974GBgbEEYxb48oGJ/Ig5bEtgYGBgjIJs+6m2OVpXDTEwMDZj5J2H+yWzKHxjYGBswGgHJmbDYfn4Vz1whoGBsTSjDXnJ4e9+2zIZEcPAwNiA8Q+PldsZx17fJgAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+
+
+
+
+
+</body>
+</html>
